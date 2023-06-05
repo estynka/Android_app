@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_appName"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/blue_app"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint_weight"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="@color/blue_font"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_appName" />
+
+    <EditText
+        android:id="@+id/editText_Height"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint_height"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="@color/blue_font"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Weight" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue_app"
+        android:onClick="calculateBmi"
+        android:text="@string/btn_calc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Height" />
+
+    <TextView
+        android:id="@+id/textView_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:textColor="@color/blue_font"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calculate" />
+
+    <TextView
+        android:id="@+id/textView_bmiCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text=""
+        android:textColor="@color/blue_font"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

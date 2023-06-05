@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BMI kontrolor</string>
+    <string name="hint_weight">Vaše váha (v Kg):</string>
+    <string name="hint_height">Vaše výška (v cm):</string>
+    <string name="btn_calc">Vypočítej BMI</string>
+    <string name="input_error">Neplatný  vstup. Zadejte znovu!</string>
+    <string name="output_result">Vaše BMI je: %1$.2f</string>
+
+    <string-array name="array_bmiCategories">
+        <item>Podváha</item>
+        <item>Optimální váha</item>
+        <item>Nadváha</item>
+        <item>Obezita 1. stupně</item>
+        <item>Obezita 2. stupně</item>
+        <item>Obezita 3. stupně</item>
+        <item>Morbidní obezita</item>
+    </string-array>
+</resources>
