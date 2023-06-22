@@ -1,10 +1,7 @@
 package com.example.bmikontrolor;
 
 import static java.lang.Math.pow;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
